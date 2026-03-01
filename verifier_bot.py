@@ -102,7 +102,7 @@ def main() -> None:
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     
     # Start polling
-    application.run_polling(allowed_updates=Update.ALL_TYPES)
+    application.run_webhook(listen="0.0.0.0", port=8443, url_path="8632956978:AAHmurJWkocw-OlthA1K--SYKlRifa1D_7E", webhook_url="https://descilondonverifierbot.onrender.com")
 
 if __name__ == '__main__':
     main()
